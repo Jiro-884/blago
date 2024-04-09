@@ -4,4 +4,4 @@
 ## Descripshion
 各種圧縮フォーマットを統一的なインタフェースで扱うもの
 
-## usage
+## Usage
