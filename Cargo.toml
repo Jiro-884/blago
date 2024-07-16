@@ -1,6 +1,14 @@
 [package]
 name = "blago"
 version = "0.1.0"
+description = "各種圧縮フォーマットを統一的なインタフェースで扱うもの."
+repository = "https://github.com/Jiro-884/blago"
+readme = "README.md"
+authors = [
+    "Yujiro Hayashi <yujirolabo@gmail.com>"
+]
+license = "CC-BY-1.0"
+categories = ["command-line-utilities", "compression"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
