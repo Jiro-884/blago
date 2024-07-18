@@ -7,7 +7,7 @@
 ## Description
 各種圧縮フォーマットを統一的なインタフェースで扱うもの
 
-##アイコン
+## アイコン
 ![logo](img/compress_tool.jpg)  
 
 ## Usage
