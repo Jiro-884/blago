@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/badge/License-CC--BY--1.0-green.svg)](https://github.com/Jiro-884/Blago\_flows/blob/main/LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/Jiro-884/Blago/badge.svg?branch=Jiro-884-patch-1)](https://coveralls.io/github/Jiro-884/Blago?branch=Jiro-884-patch-1)
 [![Rust Report Card](https://rust-reportcard.xuri.me/badge/github.com/jiro-884/blago)](https://rust-reportcard.xuri.me/report/github.com/jiro-884/blago)
+[![DOI](https://zenodo.org/badge/784023239.svg)](https://zenodo.org/doi/10.5281/zenodo.12768586)
 どんな形にも圧縮します
 ## Description
 各種圧縮フォーマットを統一的なインタフェースで扱うもの
