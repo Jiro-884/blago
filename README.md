@@ -29,7 +29,7 @@ ARGUMENTS
  ## Install
 
 ```sh
-brew install Jiro-884O/tap/blago
+brew install Jiro-884/tap/blago
 ```
 
 ## Docker
