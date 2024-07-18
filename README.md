@@ -26,3 +26,11 @@ ARGUMENTS
   auto mode:    引数にアーカイブファイルが指定されている場合, 展開する.
                 それ以外の場合, ファイルをアーカイブする．
  ```
+## Docker
+
+```sh
+docker run -it --rm -v $PWD:/workdir ghcr.io/jiro-884/blago:0.5.0 [OPTIONS] [ARGUMENTS]...
+```
+
+- **Working directory**: `/workdir`
+- **User**: `nonroot`
