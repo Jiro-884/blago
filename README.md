@@ -26,6 +26,12 @@ ARGUMENTS
   auto mode:    引数にアーカイブファイルが指定されている場合, 展開する.
                 それ以外の場合, ファイルをアーカイブする．
  ```
+ ## Install
+
+```sh
+brew install Jiro-884O/tap/blago
+```
+
 ## Docker
 
 ```sh
