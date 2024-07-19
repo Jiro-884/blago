@@ -74,7 +74,7 @@ mod tests {
         let opts = ExtractorOpts {
             dest: PathBuf::from("results/zip"),
             use_archive_name_dir: false,
-            overwrite: true,
+            //overwrite: true,
             v: create_verboser(false),
         };
         match e.perform(file, &opts) {
