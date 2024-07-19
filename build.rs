@@ -16,13 +16,13 @@ fn generate(s: Shell, app: &mut Command, outdir: &Path, file: &str) {
 
 fn main() {
     let mut app = CliOpts::command();
-    app.set_bin_name("cpt");
+    app.set_bin_name("blago");
 
     let outdir = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("target/completions/");
 
-    generate(Shell::Bash, &mut app, &outdir, "bash/cpt");
-    generate(Shell::Elvish, &mut app, &outdir, "elvish/cpt");
-    generate(Shell::Fish, &mut app, &outdir, "fish/cpt");
-    generate(Shell::PowerShell, &mut app, &outdir, "powershell/cpt");
-    generate(Shell::Zsh, &mut app, &outdir, "zsh/_cpt");
+    generate(Shell::Bash, &mut app, &outdir, "bash/blago");
+    generate(Shell::Elvish, &mut app, &outdir, "elvish/blago");
+    generate(Shell::Fish, &mut app, &outdir, "fish/blago");
+    generate(Shell::PowerShell, &mut app, &outdir, "powershell/blago");
+    generate(Shell::Zsh, &mut app, &outdir, "zsh/_blago");
 }
