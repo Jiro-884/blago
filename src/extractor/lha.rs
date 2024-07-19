@@ -111,7 +111,7 @@ mod tests {
         let opts = ExtractorOpts {
             dest: PathBuf::from("results/lha"),
             use_archive_name_dir: true,
-            //overwrite: true,
+            overwrite: true,
             v: create_verboser(false),
         };
         match e.perform(file, &opts) {
