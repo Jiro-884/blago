@@ -18,7 +18,7 @@ impl Extractor for  ZipExtractor {
         for i in 0..zip.len() {
             let file = zip.by_index(i).unwrap();
             result.push(file.name().to_string());
-            // std::io::copy(&mut file, &mut std::io::stdout()).unwrap();
+            std::io::copy(&mut file, &mut std::io::stdout()).unwrap();
         }
         Ok(result)
     }
@@ -74,7 +74,7 @@ mod tests {
         let opts = ExtractorOpts {
             dest: PathBuf::from("results/zip"),
             use_archive_name_dir: false,
-            //overwrite: true,
+            overwrite: true,
             v: create_verboser(false),
         };
         match e.perform(file, &opts) {
