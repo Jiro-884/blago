@@ -98,7 +98,7 @@ mod tests {
         let opts1 = ExtractorOpts {
             dest: PathBuf::from("."),
             use_archive_name_dir: true,
-            overwrite: false,
+            //overwrite: false,
             v: create_verboser(false),
         };
         let target = PathBuf::from("/tmp/archive.zip");
@@ -107,7 +107,7 @@ mod tests {
         let opts2 = ExtractorOpts {
             dest: PathBuf::from("."),
             use_archive_name_dir: false,
-            overwrite: false,
+            //overwrite: false,
             v: create_verboser(false),
         };
         let target = PathBuf::from("/tmp/archive.zip");
