@@ -18,7 +18,7 @@ impl Extractor for  ZipExtractor {
         for i in 0..zip.len() {
             let file = zip.by_index(i).unwrap();
             result.push(file.name().to_string());
-            std::io::copy(&mut file, &mut std::io::stdout()).unwrap();
+            //std::io::copy(&mut file, &mut std::io::stdout()).unwrap();
         }
         Ok(result)
     }
