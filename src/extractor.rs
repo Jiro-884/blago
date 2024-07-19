@@ -11,10 +11,11 @@ mod sevenz;
 mod tar;
 mod zip;
 
+#[allow(dead_code)]
 pub struct ExtractorOpts {
     pub dest: PathBuf,
     pub use_archive_name_dir: bool,
-    //pub overwrite: bool,
+    pub overwrite: bool,
     pub v: Box<dyn Verboser>,
 }
 
@@ -24,7 +25,7 @@ impl ExtractorOpts {
         ExtractorOpts {
             dest: d.unwrap_or_else(|| PathBuf::from(".")),
             use_archive_name_dir: opts.to_archive_name_dir,
-            //overwrite: opts.overwrite,
+            overwrite: opts.overwrite,
             v: create_verboser(opts.verbose),
         }
     }
@@ -98,7 +99,7 @@ mod tests {
         let opts1 = ExtractorOpts {
             dest: PathBuf::from("."),
             use_archive_name_dir: true,
-            //overwrite: false,
+            overwrite: false,
             v: create_verboser(false),
         };
         let target = PathBuf::from("/tmp/archive.zip");
@@ -107,7 +108,7 @@ mod tests {
         let opts2 = ExtractorOpts {
             dest: PathBuf::from("."),
             use_archive_name_dir: false,
-            //overwrite: false,
+            overwrite: false,
             v: create_verboser(false),
         };
         let target = PathBuf::from("/tmp/archive.zip");
